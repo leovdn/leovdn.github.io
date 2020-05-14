@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  line-height: 3.5rem;  
+  font-weight: 800;
+  margin: 0;
+  color: #282c34;
+}
+
+h1 span {
+  color: #f58d47;
+}
+
+h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-top: 0;
+}
+
+h3 {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: rgb(100, 99, 99);
+}
+
+h4 {
+  margin: 0;
+  color: #f58d47;
+  text-transform: uppercase;
+}
+
+.sidebar {
+  height: 100vh; 
+  width: 17rem; 
+  position: fixed; 
+  z-index: 10; 
+  background-color: #282c34;
+  transition: 0.5s;
+  text-align: center;
+}
+
+.teste {
+  position: relative;
+  margin: 20vh auto;
+  text-align: center;
+}
+
+.sidebar a#top {  
+ background: none;
+ display: inline-block;
+ margin: auto auto 0;
+}
+
+.sidebar img {
+  width: 180px;
+  border: 4px solid #f58d47;
+  border-radius: 50%;
+} 
+
+.menu-links a {
+  top: 200px;
+  padding: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: .05em;
+  color: #aaaaaa;
+  display: block;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+
+.menu-links ul {
+  margin: 0;
+  list-style: none;
+  padding-top: 22px;
+  padding-left: 0;
+  align-content: center;
+}
+
+.main {
+  margin-left: 270px;
+  max-width: 55rem;
+
+}
+
+section {
+  padding: 0 32px;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  margin: 0;
+  background: rgb(99, 99, 99);
+  opacity: 50%;
+}
+
+.resume-section {
+  padding-top: 20vh;
+  padding-bottom: 3rem;
+}
+
+.resume-section p {
+  margin: 50px 0;
+}
+
+#info {
+  margin: 0;
+  text-align: center;
+  text-transform: none;
+  font-size: 1rem;
+  color: #6b6b6b;
+  font-weight: bold;
+  letter-spacing: .05em;
+}
+
+#info span {
+  color: #ff9650;
+}
+
+#about {
+  padding-top: 20vh;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.data {
+  text-align: right;
+  align-self: flex-end;
+}
+
+.data h4 {
+  color: #f58d47;
+  font-weight: 700;
+  font-family: sans-serif;
+  letter-spacing: .05em;
+}
