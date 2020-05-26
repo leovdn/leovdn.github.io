@@ -56,6 +56,8 @@ h4 {
   text-align: center;
 }
 
+
+
 .teste {
   position: relative;
   margin: 20vh auto;
@@ -74,17 +76,6 @@ h4 {
   border-radius: 50%;
 } 
 
-.menu-links a {
-  top: 200px;
-  padding: 6px;
-  text-decoration: none;
-  font-weight: 600;
-  letter-spacing: .05em;
-  color: #aaaaaa;
-  display: block;
-  transition: 0.3s;
-  text-transform: uppercase;
-}
 
 .menu-links ul {
   margin: 0;
@@ -94,10 +85,65 @@ h4 {
   align-content: center;
 }
 
+.menu-links ul li a {
+  top: 200px;
+  margin: 3px;
+  padding: 2px 12px;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: .05em;
+  color: #aaaaaa;
+  display: inline-block;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+
+.menu-links ul li a:hover {
+  color: #fff;
+}
+
 .main {
   margin-left: 270px;
   max-width: 55rem;
 
+}
+
+@media (max-width: 739px) {
+  .sidebar {
+    height: 10vh; 
+    width: 100%; 
+    position: fixed; 
+    background-color: #282c34;
+    transition: 0.5s;
+    text-align: center;
+  }
+  .main {
+    margin-left: 10px;
+  }
+  .menu-links {
+    display: inline-block;
+  }
+  .menu-links ul {
+    display: flex;
+  }
+  .menu-links ul li {
+    font-size: 0.675em;
+    margin: auto 0px;
+    padding-left: 0px;
+  }
+  ul.menu-lista {
+    padding-top: 0;
+    margin: 2.5vh auto;
+  }
+  .sidebar img {
+    width: 48px;
+    border: 1px solid #f58d47;
+    margin: auto 0;
+  }
+  .teste {
+    margin: 0;
+    display: flex;
+  }
 }
 
 section {
