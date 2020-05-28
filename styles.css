@@ -58,7 +58,7 @@ h4 {
 
 
 
-.teste {
+.sidebar-content {
   position: relative;
   margin: 20vh auto;
   text-align: center;
@@ -140,7 +140,7 @@ h4 {
     border: 1px solid #f58d47;
     margin: auto 0;
   }
-  .teste {
+  .sidebar-content {
     margin: 0;
     display: flex;
   }
@@ -185,18 +185,24 @@ hr {
   padding-top: 20vh;
 }
 
-.item {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+.item-subtitle {
+  display: flex;
 }
 
-.data {
+.item-subtitle h4 {
+  flex-grow: 1;
+  text-transform: none;
+  
+}
+
+
+.item-data {
   text-align: right;
   align-self: flex-end;
 }
 
-.data h4 {
-  color: #f58d47;
+.item-data h4 {
+  color: #ff8d41;
   font-weight: 700;
   font-family: sans-serif;
   letter-spacing: .05em;
