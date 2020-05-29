@@ -130,6 +130,7 @@ hr {
   color: #ff9650;
 }
 
+
 #about {
   padding-top: 20vh;
 }
@@ -144,6 +145,10 @@ hr {
   
 }
 
+.conteudo p {
+  max-width: 760px;
+}
+
 .item-data {
   text-align: right;
   align-self: flex-end;
@@ -152,8 +157,26 @@ hr {
 .item-data h4 {
   color: #ff8d41;
   font-weight: 700;
+  font-size: .875em;
+  text-transform: uppercase;
   font-family: sans-serif;
   letter-spacing: .05em;
+}
+
+.social-media ul {
+  display: flex;
+  max-width: 760px;
+  justify-content: center;
+}
+
+.social-media a {
+  margin-right: 24px;
+  
+}
+
+.social-media a i:hover {
+  color: #f58d47;
+  transition: 300ms ease-out;
 }
 
 @media (max-width: 739px) {
@@ -162,7 +185,7 @@ hr {
       max-height: 72px;
   }
   .container {
-      margin: 0 auto;
+    margin: 0  20px auto auto;      
   }
   .nav-content {
       display: flex;
@@ -197,3 +220,28 @@ hr {
       font-size: 2em;
   }
 }
+
+/* ICONS */
+
+.fa-github, .fa-linkedin{
+  font-size: 3em;
+  color: #282c34;
+}
+
+.skills-logo {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills-logo li {
+  padding-right: 24px;
+  align-self: center;
+  margin-top: 12px;
+}
+
+.skills-logo img {
+  max-width: 48px;
+  max-height: 48px;
+}
+

@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/c66b35abec.js"></script>
   <title>Leonardo - Resumé</title>
 </head>
 
 <body>
   <header>
-    <nav class="nav">
+    <nav class="nav js-menu">
       <div class="nav-content">
         <div class="profile-img">
           <img src="profile.jpg" alt="">
@@ -28,16 +29,16 @@
   
   <div class="container">
     <section class="resume-section" id="about">
-      <div>
+      <div class="conteudo">
         <h1>Leonardo <span>Nascimento</span></h1>
         <h3 id="info">Praia Grande - SP | <span>leo_vdn@hotmail.com</span></h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti cupiditate vero minus quaerat, eum perspiciatis alias? Eos, placeat tempora, nulla, beatae qui sunt unde error molestias ipsa architecto dolorum quisquam earum ipsam!</p>
-      </div>
-      <div class="redes-sociais">
-        <ul>
-          <li>LinkedIn</li>
-          <li>Github</li>
-        </ul>
+        <div class="social-media">
+          <ul>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fab fa-github"></i></a></li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -89,7 +90,7 @@
 
     <section class="resume-section" id="education">
       <h2>Educação</h2>
-      <div class="ed">
+      <div class="conteudo">
         <div class="item">
           <div class="item-title">
             <h3>Engenharia da Computação</h3>
@@ -106,25 +107,28 @@
 
     <section class="resume-section" id="skills">
       <h2>Skills</h2>
-      <div class="ed">
+      <div class="content">
         <div class="item">
           <div>
             <h4>Linguagens de Programação e Ferramentas</h4>
           </div>
         </div>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript ES6</li>
-          <li>Node.Js</li>
-          <li>Java</li>
-          <li>Git</li>
-          <li>HTML</li>
+        <ul class="skills-logo">
+          <li><img src="img/html5-brands.png" alt=""></li>
+          <li><img src="img/css3-brands.png" alt=""></li>
+          <li><img src="img/js-square-brands.png" alt=""></li>
+          <li><img src="img/node-brands.png" alt=""></li>
+          <li><img src="img/npm-brands.png" alt=""></li>
+          <li><img src="img/sass-brands.png" alt=""></li>
+          <li><img src="img/yarn-brands.png" alt=""></li>
+          <li><img src="img/docker-brands.png" alt=""></li>
+          <li><img src="img/windows-brands.png" alt=""></li>
         </ul>
       </div>
       
     </section>
   </div>
+  <script src="scripts.js"></script>
 </body>
 
 </html>
