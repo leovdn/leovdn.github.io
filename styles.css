@@ -1,16 +1,14 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 
 body {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #212529;
-  text-align: left;
-  background-color: #fff;
-  margin: 0;
+  display: flex;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h1 {
@@ -23,131 +21,25 @@ h1 {
 }
 
 h1 span {
-  color: #f58d47;
+color: #f58d47;
 }
 
 h2 {
   font-size: 2rem;
   text-transform: uppercase;
   font-weight: 800;
-  margin-top: 0;
+  color: #282c34;
 }
 
 h3 {
-  margin: 0;
   text-transform: uppercase;
   font-size: 1.5rem;
   color: rgb(100, 99, 99);
 }
 
 h4 {
-  margin: 0;
-  color: #f58d47;
-  text-transform: uppercase;
-}
-
-.sidebar {
-  height: 100vh; 
-  width: 17rem; 
-  position: fixed; 
-  z-index: 10; 
-  background-color: #282c34;
-  transition: 0.5s;
-  text-align: center;
-}
-
-
-
-.sidebar-content {
-  position: relative;
-  margin: 20vh auto;
-  text-align: center;
-}
-
-.sidebar a#top {  
- background: none;
- display: inline-block;
- margin: auto auto 0;
-}
-
-.sidebar img {
-  width: 180px;
-  border: 4px solid #f58d47;
-  border-radius: 50%;
-} 
-
-
-.menu-links ul {
-  margin: 0;
-  list-style: none;
-  padding-top: 22px;
-  padding-left: 0;
-  align-content: center;
-}
-
-.menu-links ul li a {
-  top: 200px;
-  margin: 3px;
-  padding: 2px 12px;
-  text-decoration: none;
-  font-weight: 600;
-  letter-spacing: .05em;
-  color: #aaaaaa;
-  display: inline-block;
-  transition: 0.3s;
-  text-transform: uppercase;
-}
-
-.menu-links ul li a:hover {
-  color: #fff;
-}
-
-.main {
-  margin-left: 270px;
-  max-width: 55rem;
-
-}
-
-@media (max-width: 739px) {
-  .sidebar {
-    height: 10vh; 
-    width: 100%; 
-    position: fixed; 
-    background-color: #282c34;
-    transition: 0.5s;
-    text-align: center;
-  }
-  .main {
-    margin-left: 10px;
-  }
-  .menu-links {
-    display: inline-block;
-  }
-  .menu-links ul {
-    display: flex;
-  }
-  .menu-links ul li {
-    font-size: 0.675em;
-    margin: auto 0px;
-    padding-left: 0px;
-  }
-  ul.menu-lista {
-    padding-top: 0;
-    margin: 2.5vh auto;
-  }
-  .sidebar img {
-    width: 48px;
-    border: 1px solid #f58d47;
-    margin: auto 0;
-  }
-  .sidebar-content {
-    margin: 0;
-    display: flex;
-  }
-}
-
-section {
-  padding: 0 32px;
+color: #f58d47;
+text-transform: uppercase;
 }
 
 hr {
@@ -158,17 +50,73 @@ hr {
   opacity: 50%;
 }
 
+
+.nav {
+  background-color: #282c34;
+  width: 200px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;    
+  position: fixed;
+}
+
+.nav-content {
+  color: #fff;
+  text-align: center;
+}
+
+
+.profile-img img {
+  width: 160px;
+  border: 4px solid #f58d47;       
+  border-radius: 50%;
+}
+
+.nav-content ul {
+  list-style: none;
+  text-align: center;
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+.nav-content ul li a{
+  padding: 2px 12px;
+  color: #aaaaaa;   
+  text-transform: uppercase;
+  font-weight: bold; 
+  line-height: 1.8em;
+  font-size: 1.125em;
+}
+
+.nav-content ul li a:hover {
+  color: #fff;
+  transition: ease-in-out 200ms ;
+}
+
+
+
+/* MAIN CONTENT */
+
+.container {
+  background: #fff;
+  width: 960px;
+  margin-left: 200px;
+  padding-left: 32px;
+}
+
 .resume-section {
-  padding-top: 20vh;
+  padding-top: 18vh;
   padding-bottom: 3rem;
 }
 
 .resume-section p {
-  margin: 50px 0;
+  margin: 48px 0;
 }
 
 #info {
-  margin: 0;
+  margin: 0 40px 0 0;
   text-align: center;
   text-transform: none;
   font-size: 1rem;
@@ -206,4 +154,42 @@ hr {
   font-weight: 700;
   font-family: sans-serif;
   letter-spacing: .05em;
+}
+
+
+
+
+
+@media (max-width: 739px) {
+  .nav {
+      width: 100%;
+      height: 60px;
+  }
+  .container {
+      margin: 0 auto;
+  }
+  .nav-content {
+      display: flex;
+  }
+  .profile-img {
+      margin: auto;
+  }
+  .nav-content img {
+      width: 48px;
+      border: 2px solid #f58d47;
+  }
+  .nav-content ul {
+      display: flex;
+      flex-wrap: wrap;
+
+  }
+  .nav-content ul li {
+      font-size: 0.6em;
+  }
+  .resume-section {
+      padding-top: 10vh;
+  }
+  h1 {
+      font-size: 2em;
+  }
 }
