@@ -244,10 +244,9 @@ hr {
   }
   .nav-content {
     display: flex;
-    max-height: 72px;
+    height: 72px;
     width: 100%;
-    padding-left: 32px;
-    margin: 0   auto;  
+    margin-left: 32px;
   }
   .profile-img {
     margin: auto 0;  
@@ -256,16 +255,17 @@ hr {
     width: 60px;
     border: 2px solid #f58d47;
   }
+  .nav-content ul {
+    display: flex;
+    flex-grow: 1;
+  }
+  .nav-content ul li {
+    flex-grow: 1;
+    text-align: center;
+  } 
   .nav-content ul li a {
     padding: 8px 12px;
   }
-  .nav-links {
-    display: flex;      
-    flex-wrap: wrap;
-  }  
-  .nav-links li {
-    width: 56px;   
-  } 
   .resume-section {
     padding-top: calc(10vh + 72px);
   }  
