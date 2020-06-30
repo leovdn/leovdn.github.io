@@ -190,6 +190,18 @@ hr {
   transition: all 300ms ease-out;
 }
 
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  padding: 18px;
+}
+
+.projects-grid li img {
+  max-width: 100%;
+  width: 100%;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
 
 
 /* ICONS */
@@ -227,6 +239,8 @@ hr {
   max-width: 10px;
   max-height: 20px;
 }
+
+
 
 /* MOBILE */
 
