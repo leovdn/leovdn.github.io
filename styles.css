@@ -65,7 +65,7 @@ hr {
 }
 
 .nav-content {
-  color: #fff;
+  color: rgb(75, 73, 73);
   text-align: center;
 }
 
@@ -285,9 +285,9 @@ hr {
   .nav-content ul {
     display: flex;
     flex-grow: 1;
+    justify-content: center;
   }
   .nav-content ul li {
-    flex-grow: 1;
     text-align: center;
   } 
   .nav-content ul li a {
@@ -300,7 +300,8 @@ hr {
     display: none;
   }
   .fas  {
-    font-size: 1.5em;
+    font-size: 1.5rem;
+    margin-right: 1rem;
   }
   .projects-grid {
     grid-template-columns: 1fr;
